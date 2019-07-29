@@ -1,0 +1,44 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 0d990787d37a9288e4f93e1ecfc2c93b1c0c8ddcb623ee03d67311b1bd8ae402
+
+name:           lens-utils
+version:        1.4
+synopsis:       Collection of missing lens utilities.
+category:       Text
+stability:      stable
+homepage:       https://github.com/wdanilo/lens-utils
+bug-reports:    https://github.com/wdanilo/lens-utils/issues
+author:         Wojciech Danilo
+maintainer:     Wojciech Danilo <wojciech.danilo@gmail.com>
+copyright:      Copyright (C) 2015 Wojciech Danilo
+license:        Apache-2.0
+license-file:   LICENSE
+build-type:     Simple
+
+library
+  exposed-modules:
+      Control.Lens.Aeson
+      Control.Lens.Utils
+      Control.Lens.Utils.Nested
+      Control.Lens.Utils.TH
+      Control.Lens.Utils.Wrapped
+  other-modules:
+      Paths_lens_utils
+  hs-source-dirs:
+      src
+  default-extensions: ConstraintKinds DataKinds DefaultSignatures DeriveDataTypeable DeriveFoldable DeriveFunctor DeriveGeneric DeriveTraversable DoAndIfThenElse EmptyDataDecls FlexibleContexts FlexibleInstances GeneralizedNewtypeDeriving InstanceSigs LambdaCase MultiParamTypeClasses OverloadedStrings StandaloneDeriving TemplateHaskell TupleSections TypeOperators ViewPatterns TypeFamilies
+  ghc-options: -Wall -O2
+  build-depends:
+      aeson
+    , base
+    , containers
+    , data-default
+    , lens
+    , monoid
+    , template-haskell
+  default-language: Haskell2010
